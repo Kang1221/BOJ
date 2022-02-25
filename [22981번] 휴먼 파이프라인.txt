@@ -1,9 +1,6 @@
-//20%까지 돌다가 틀렸습니다. 
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include<cmath>
 using namespace std;
 
 int main() {
@@ -31,7 +28,15 @@ int main() {
             max = v_sum;
     }
 
-    cout << ceil(k / max);
+    //cout << ceil(k / max); 큰 수이면 정확한 값X
+        
+    if (k % max == 0)
+        result = k / max;
+
+    else
+        result = k / max+1;
+   
+    cout << result;
 
     return 0;
 }
