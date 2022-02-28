@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-//for 오름차순 정렬
+//오름차순 정렬
 bool cmp(int a, int b) { return a > b; }
 
 int main() {
@@ -20,7 +20,7 @@ int main() {
 		C.push_back(tmp);
 	}
 
-	//vector 오름차순 정렬
+	//오름차순 정렬
 	sort(C.begin(), C.end(), cmp);
 
 	int j=0, num_a=1, b = C[0] ;
