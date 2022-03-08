@@ -8,7 +8,7 @@ struct student {
     int kor, eng, math;
 };
 
-//µé¿©¾²±â 3¹ø ÀÌ»ó = bad
+//ë“¤ì—¬ì“°ê¸° 3ë²ˆ ì´ìƒ = bad
 bool cmp(const student &a, const student &b) {
     if (a.kor == b.kor) {
         if (a.eng == b.eng) {
