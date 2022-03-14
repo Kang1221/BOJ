@@ -1,0 +1,34 @@
+#include <iostream>
+#include <algorithm>
+#include <set>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    int T,N, M, input;
+
+    cin >> T;
+    for (int i = 0; i < T; i++) {
+        cin >> N;
+        set<int> s;
+
+        for (int j = 0; j < N; j++) {
+            cin >> input;
+            s.insert(input);
+        }
+
+        cin >> M;
+        for (int j = 0; j < M; j++) {
+            cin >> input;
+            if (s.end() == s.find(input))
+                cout << 0 << '\n';
+            else
+                cout << 1 << '\n';
+        }
+    }
+  
+    return 0;
+}
